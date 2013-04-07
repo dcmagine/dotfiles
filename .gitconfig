@@ -1,0 +1,4 @@
+[alias]
+	cm = commit -m
+	logg = log --online --graph --color
+	st = status -s
