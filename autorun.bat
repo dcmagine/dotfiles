@@ -7,8 +7,5 @@ REM path of this file (ie 'C:\env.autorun.bat').
 REM Create alias for SublimeText2 so that folder can be opened in Sublime with '>slime .'
 doskey slime="C:\Program Files\Sublime Text 2\sublime_text.exe" $*
 
-REM Don't ever want to start in my Users folder
-cd \
-
 REM Change color of text. 'help color' to see options
 color A
