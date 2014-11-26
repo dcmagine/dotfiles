@@ -1,4 +1,6 @@
 [alias]
 	cm = commit -m
-	logg = log --online --graph --color
+	cam = commit -a -m
+	co = checkout
+	logg = log --online --graph --color --decorate --all
 	st = status -s
