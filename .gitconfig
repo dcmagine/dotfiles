@@ -2,5 +2,8 @@
 	cm = commit -m
 	cam = commit -a -m
 	co = checkout
-	logg = log --online --graph --color --decorate --all
+	fetch = fetch -p
+	gr = reset --hard HEAD
+	logg = log --oneline --graph --color --decorate --all
+	logo = log --oneline
 	st = status -s
