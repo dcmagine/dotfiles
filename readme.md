@@ -1,1 +1,20 @@
-Just my dotfiles.
+# What
+The goal is to be able to just clone this repo and run an install script
+to get my preferred setting configured in a fresh unix/linux installation.
+
+## ToDo
+
+- Move `autorun.bat` to a windows setup repo
+- Add script that installs tools like git, homebrew, iojs etc
+
+# Lessons learned
+OS X is based on the open source OS called Darwin which in turn is a fork of BSD.
+
+## Shells & Shell scripts
+- The shebang (#!) marks the beginning of a _interpreter directive header_ that dictates which shell will be used as its interpreter.
+`#!/usr/bin/env bash` will make `bash` the interpreter.
+- All shell sessions are login shell in Darwin/OS X
+- Darwin/OS X runs `~/.bash_profile` that sources `~/.bashrc`
+- The .osx-file is not run by magic. The only reason stuff worked on my laptop was because the file had been run previously and the setting are persisted somewhere else
+
+

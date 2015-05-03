@@ -1,39 +1,43 @@
 #!/usr/bin/env bash
 
+# ~/.osx (not present on fresh install)
+
 # Ask for the administrator password upfront
 sudo -v
 
-# Set a balzingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
+if [ $(uname -s) = "Darwin"]
+then
+	# Set a balzingly fast keyboard repeat rate
+	defaults write NSGlobalDomain KeyRepeat -int 0
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=%00
+	# Disable the sound effects on boot
+	sudo nvram SystemAudioVolume=%00
 
-###############################################
-# Trackpad and mouse
-###############################################
+	###############################################
+	# Trackpad and mouse
+	###############################################
 
-# Trackpad: enable tap to click for this user and for the login screen
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+	# Trackpad: enable tap to click for this user and for the login screen
+	defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+	defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+	defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-###############################################
-# Finder
-###############################################
+	###############################################
+	# Finder
+	###############################################
 
-# Show hidden files by default
-defaults write com.apple.Finder AppleShowAllFiles -bool false
+	# Show hidden files by default
+	defaults write com.apple.Finder AppleShowAllFiles -bool false
 
-# Show all file name extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+	# Show all file name extensions
+	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# Allow quitting via cmd + Q; doing so will also hide desktop icons
-defaults write com.apple.finder QuitMenuItem -bool true
+	# Allow quitting via cmd + Q; doing so will also hide desktop icons
+	defaults write com.apple.finder QuitMenuItem -bool true
 
-# Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+	# Display full POSIX path as Finder window title
+	defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
-# Disable the warning when changing a file extension
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-
+	# Disable the warning when changing a file extension
+	defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+fi

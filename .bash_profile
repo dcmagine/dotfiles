@@ -1,6 +1,7 @@
-source ~/.bashrc
+#!/usr/bin/env bash
 
-export PATH=$PATH:/data/mongodb/2.0.3/bin
+source ~/.bashrc
+source ~/.osx
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
