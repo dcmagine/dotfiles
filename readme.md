@@ -2,6 +2,13 @@
 The goal is to be able to just clone this repo and run an install script
 to get my preferred setting configured in a fresh unix/linux installation.
 
+## How to install
+    cd ~
+    git clone https://github.com/davidxcheng/dotfiles.git
+    cd dotfiles
+    chmod 744 install.sh
+    ./install.sh 
+
 ## ToDo
 
 - Move `autorun.bat` to a windows setup repo
@@ -17,4 +24,5 @@ OS X is based on the open source OS called Darwin which in turn is a fork of BSD
 - Darwin/OS X runs `~/.bash_profile` that sources `~/.bashrc`
 - The .osx-file is not run by magic. The only reason stuff worked on my laptop was because the file had been run previously and the setting are persisted somewhere else
 
+[Info about the order in which files are read](http://dghubble.com/blog/posts/.bashprofile-.profile-and-.bashrc-conventions/)
 
