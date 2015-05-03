@@ -8,3 +8,6 @@ cp .bashrc ~/
 
 echo copying .osx to ~/.osx
 cp .osx ~/
+
+echo copying .gitconfig to ~/.gitconfig
+cp .gitconfig ~/
