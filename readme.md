@@ -7,7 +7,9 @@ to get my preferred setting configured in a fresh unix/linux installation.
     git clone https://github.com/davidxcheng/dotfiles.git
     cd dotfiles
     chmod 744 install.sh
-    ./install.sh 
+    ./install.sh
+
+As of 2015-10-03 `install.sh` has an untested command for creating a `slime` symlink to Sublime Text
 
 ## ToDo
 
@@ -22,7 +24,7 @@ OS X is based on the open source OS called Darwin which in turn is a fork of BSD
 `#!/usr/bin/env bash` will make `bash` the interpreter.
 - All shell sessions are login shell in Darwin/OS X
 - Darwin/OS X runs `~/.bash_profile` that sources `~/.bashrc`
-- The .osx-file is not run by magic. The only reason stuff worked on my laptop was because the file had been run previously and the setting are persisted somewhere else
+- When running the `default` commands in the .osx-file the changes are persisted in ~/Library/Preferences. No need to run it on every boot.
 
 [Info about the order in which files are read](http://dghubble.com/blog/posts/.bashprofile-.profile-and-.bashrc-conventions/)
 

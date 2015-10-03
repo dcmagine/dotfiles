@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 source ~/.bashrc
-source ~/.osx
 
 # {{{
 # Node Completion - Auto-generated, do not touch.

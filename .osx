@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Once these commands run the changes are persisted in ~/Library/Preferences
+# Therefore there is no reason to source this file from .bash_profile that runs on every boot. But it might
+# still be handy to have this file in the home directory (makes it easy to see which defaults has been changed)
+
 # ~/.osx (not present on fresh install)
 
 # Ask for the administrator password upfront
@@ -33,6 +37,7 @@ then
 	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 	# Allow quitting via cmd + Q; doing so will also hide desktop icons
+	# This setting is not working on Yosemite 10.10.5
 	defaults write com.apple.finder QuitMenuItem -bool true
 
 	# Display full POSIX path as Finder window title
