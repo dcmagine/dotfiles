@@ -1,5 +1,6 @@
 [alias]
-	cm = commit -m
+	cm = commit 
+	cmm = commit -m
 	cam = commit -a -m
 	co = checkout
 	fetch = fetch -p
