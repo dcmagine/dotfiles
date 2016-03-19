@@ -1,0 +1,6 @@
+alias ..="cd .."
+alias node="node --harmony_destructuring"
+alias l="ls -lah"
+
+# `cat` with beautiful colors. requires: sudo easy_install -U Pygments
+alias c="pygmentize -O style=monokai -f console256 -g"

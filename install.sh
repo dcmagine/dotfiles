@@ -6,6 +6,9 @@ cp .bash_profile ~/
 echo copying .bashrc to ~/.bashrc
 cp .bashrc ~/
 
+echo copying .aliases to ~
+cp .aliases ~/
+
 echo copying .osx to ~/.osx
 cp .osx ~/
 chmod +x ~/.osx
@@ -22,6 +25,9 @@ then
 else
 	echo Skipping osx defaults
 fi
+
+# for the c alias (syntax higglighted cat)
+sudo easy_install Pygments
 
 read -p "Create symlink to Sublime? (y/n)" -n 1 -r DoSlime
 echo

@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 source ~/.bashrc
+source ~/.aliases
+source ~/.osx
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
