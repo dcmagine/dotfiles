@@ -9,6 +9,9 @@
 	logg = log --oneline --graph --color --decorate --all
 	logo = log --oneline
 	st = status -s
+	
+[diff]
+        compactionHeuristic = true
 
 [push]
 	default = current
